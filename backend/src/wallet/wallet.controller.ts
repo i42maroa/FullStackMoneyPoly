@@ -54,6 +54,7 @@ export class WalletController {
         });
     }
 
+
     @Post()
     async createTransaction(@Res() res, @Body() createTransactionWalletDto: CreateTransactionWalletDto){
         const transaction = await this.walletService.create(createTransactionWalletDto);
